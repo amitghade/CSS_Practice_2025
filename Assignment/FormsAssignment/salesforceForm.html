@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* General styling */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: blue;
+      }
+
+      /* Css for form container */
+      #formContainer {
+        background-color: whitesmoke;
+        width: 550px;
+        height: auto;
+        margin: auto;
+        padding: 20px;
+        border-radius: 20px;
+      }
+
+      #formContainer h2 {
+        margin-top: 30px;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+      }
+
+      #formContainer img {
+        width: 118px;
+        height: 80px;
+      }
+
+      /* Css for logo */
+
+      #logoContainer {
+        text-align: center;
+      }
+      #formContainer p.main-head {
+        text-align: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      #highlight {
+        background-color: lightgray;
+        text-align: center;
+        padding: 20px 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      label {
+        font-size: 12px;
+      }
+
+      .labels {
+        display: inline-block;
+        width: 43%;
+      }
+
+      .labels input {
+        width: 100%;
+        padding: 7px 3px;
+      }
+
+      .email-input {
+        width: 100%;
+        margin-top: 15px;
+      }
+
+      .email-input input {
+        width: 100%;
+        padding: 7px 3px;
+      }
+
+      .role-input {
+        margin-top: 15px;
+      }
+
+      select {
+        width: 100%;
+        padding: 8px;
+      }
+
+      .company-input {
+        width: 100%;
+        margin-top: 15px;
+      }
+
+      .company-input input {
+        width: 100%;
+        padding: 7px 3px;
+      }
+
+      .country-input {
+        margin-top: 15px;
+      }
+
+      .postal-input {
+        width: 100%;
+        margin-top: 15px;
+      }
+
+      .postal-input input {
+        width: 100%;
+        padding: 7px 3px;
+      }
+
+      .username-input {
+        width: 100%;
+        margin-top: 15px;
+      }
+
+      .username-input input {
+        width: 100%;
+        padding: 7px 3px;
+      }
+
+      .message-container {
+        text-align: left;
+      }
+
+      .message {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12px;
+      }
+
+      .message a {
+        text-decoration: none;
+      }
+
+      #aggrement label {
+        font-size: 15px;
+      }
+
+      #aggrement a {
+        text-decoration: none;
+      }
+
+      div#check {
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: top;
+      }
+
+      div#check input {
+        width: 18px;
+        height: 18px;
+      }
+
+      div#check-label {
+        display: inline-block;
+        width: 400px;
+      }
+
+      #signup {
+        margin-top: 50px;
+        width: 100%;
+        padding: 15px 10px;
+        background-color: rgb(78, 78, 194);
+        color: white;
+        border: none;
+        border-radius: 7px;
+      }
+
+      .main-head a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container Section -->
+    <div id="formContainer">
+      <div id="logoContainer">
+        <img src="salesforce-logo-corporate.svg" alt="Salesforce Logo" />
+      </div>
+      <h2>Sign up for your Salesforce Developer Edition</h2>
+      <p class="main-head">A Salesforce Platform environment for free.</p>
+      <div id="highlight">
+        Complete the form to get access to the Salesforce Developer Edition.
+      </div>
+      <form action="#">
+        <!-- container for name labeles -->
+        <div class="labels" style="margin-right: 60px">
+          <label for="fname">First Name*</label><br />
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="Your first name"
+          />
+        </div>
+        <div class="labels">
+          <label for="lname">Last Name*</label><br />
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            placeholder="Your last name"
+          />
+        </div>
+        <div class="email-input">
+          <label for="email">Email*</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email address"
+          />
+        </div>
+
+        <div class="role-input">
+          <label for="role">Role*</label><br />
+          <select id="role" name="role">
+            <option value="" selected disabled>Your Job role</option>
+            <option value="Developer">Developer</option>
+            <option value="Architect">Architect</option>
+            <option value="Administrator">Administrator</option>
+            <option value="IT Manager">IT Manager</option>
+            <option value="Business Manager">Business Manager</option>
+          </select>
+        </div>
+
+        <div class="company-input">
+          <label for="company">Company*</label><br />
+          <input
+            type="text"
+            name="company"
+            id="company"
+            placeholder="Your company name"
+          />
+        </div>
+
+        <div class="country-input">
+          <label for="role">Country*</label><br />
+          <select id="country" name="country">
+            <option value="" disabled>Your Country/Region</option>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+            <option value="USA">USA</option>
+            <option value="Germany">Germany</option>
+            <option value="Argentina">Argentina</option>
+          </select>
+        </div>
+
+        <div class="postal-input">
+          <label for="postal">Postal Code*</label><br />
+          <input
+            type="text"
+            name="postal"
+            id="postal"
+            placeholder="Your postal code"
+          />
+        </div>
+
+        <div class="username-input">
+          <label for="username">Username*</label><br />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="amit@gmail.com"
+          />
+        </div>
+        <div class="message-container">
+          <p class="message">
+            Your username must be in the form of an email address (it does not
+            have to be real). It must be unique and cannot be associated with
+            another Salesforce login credential.
+            <a
+              href="https://help.salesforce.com/s/articleView?id=xcloud.basics_intro_usernames_passwords.htm&type=5"
+              >Read more about username recommendations.</a
+            >
+          </p>
+          <div id="aggrement">
+            <div id="check"><input type="checkbox" id="agree" /></div>
+            <div id="check-label">
+              <label for="agree"
+                >I agree to the<a
+                  href="https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/salesforce_Developer_MSA.pdf"
+                >
+                  Main Services Agreement-Developer Services</a
+                >
+                and
+                <a
+                  href="https://www.salesforce.com/company/legal/program-agreement/"
+                  >Salesforce Program Agreement.</a
+                ></label
+              >
+            </div>
+          </div>
+        </div>
+
+        <button id="signup">Sign me Up</button>
+
+        <p class="main-head">
+          Already have a Salesforce Developer Environment?
+        </p>
+        <p class="main-head">
+          <a href="">Log in</a>
+        </p>
+      </form>
+    </div>
+
+    <div class="container">
+      <h1 class="head1"></h1>
+      <h1 class="head2"></h1>
+    </div>
+  </body>
+</html>
